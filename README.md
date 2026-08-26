@@ -64,5 +64,40 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lumilens is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/lumilens_stock/
+Lumilens is a San Jose, California photonics company building optical interconnect silicon
+for AI data centers. Founded in 2024 by Ankur Singla (previously Contrail Systems and
+Volterra) with Ted Schmidt, Samuel Liu, Ritesh Kapahi and Dave Friedman, it designs
+co-packaged optics (CPO) and near-packaged optics (NPO) devices — plus high-density
+pluggable optics — that let hyperscalers replace copper interconnect with fiber at
+800Gb/s, 1.6Tb/s and beyond. The company emerged from stealth in August 2026 with more
+than $900M raised, including a $700M Series C at a $5.51B valuation led by Atreides
+Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital, and
+says it is already shipping production optical interconnect into hyperscale AI data
+centers under a multi-billion-dollar customer agreement.
+
+## API surface
+
+**None found.** As of 2026-08-25 Lumilens publishes no API, SDK, webhook surface or
+machine-readable contract of any kind. Contract discovery was run against every host the
+company is known to control: no OpenAPI/Swagger, no GraphQL, no MCP server, no AsyncAPI,
+no A2A agent card, no WSDL, no `.proto`, and no `.well-known` document. Every
+developer-shaped subdomain (`api.`, `docs.`, `developer.`, `portal.`, `dev.`, `app.`,
+`console.`, `status.`, `support.`, `partners.`) is NXDOMAIN. `lumilens.com` is a Webflow
+interim recruiting and news site whose own footer "Blog" link is hidden and returns 404.
+The GitHub organization `github.com/Lumilens` exists but publishes zero public
+repositories. npm returns zero packages for "lumilens"; PyPI 404s. The full probe log,
+with every URL and the status it returned, is recorded in `apis.yml` under
+`x-contract-discovery`.
+
+This is an honest zero, not a gap in our research — the product is physical silicon sold
+direct to a small number of very large buyers.
+
+## Links
+
+- Website: https://lumilens.com/
+- Photonic interconnects: https://lumilens.com/photonic-interconnects
+- Company: https://lumilens.com/company
+- News & insights: https://lumilens.com/news-insights
+- Terms of use: https://lumilens.com/terms-of-use
+- Privacy policy: https://lumilens.com/privacy
+- Secondary-market listing (harvest source): https://forgeglobal.com/lumilens_stock/

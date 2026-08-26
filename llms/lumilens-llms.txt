@@ -1,0 +1,41 @@
+# Lumilens
+
+> Lumilens is a San Jose, California photonics company building optical interconnect silicon
+> — co-packaged optics (CPO) and near-packaged optics (NPO) — for AI data centers, so
+> hyperscalers can replace copper with fiber at 800Gb/s, 1.6Tb/s and beyond. Founded 2024,
+> emerged from stealth August 2026 with more than $900M raised (including a $700M Series C
+> at a $5.51B valuation) and production shipments into hyperscale AI data centers.
+
+## Important for agents
+
+Lumilens publishes **no public API, SDK, webhook surface or machine-readable contract**.
+As of 2026-08-25 there is no developer portal, no documentation host, no OpenAPI/AsyncAPI/
+GraphQL/MCP endpoint, and no `.well-known` discovery surface. The product is physical
+silicon sold direct to a small number of very large buyers. Do not attempt to construct or
+guess API endpoints for this company — none exist. `lumilens.com` is an interim recruiting
+and news site built on Webflow.
+
+## Company
+
+- [Lumilens](https://lumilens.com/): Company home.
+- [About Us](https://lumilens.com/company): Mission, founders and leadership team.
+- [Photonic Interconnects](https://lumilens.com/photonic-interconnects): The optical interconnect product line.
+- [Next-Gen Manufacturing](https://lumilens.com/next-gen-manufacturing-robotics-ai): Custom robotics and AI-optimized production.
+- [Join Lumilens](https://lumilens.com/join-lumilens): Careers.
+
+## News and insights
+
+- [News & Insights](https://lumilens.com/news-insights): Press releases, blog posts, videos and media coverage.
+- [Lumilens emerges with $900M+ in funding](https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding): Launch announcement, August 2026.
+- [Networks Are Now the AI Bottleneck](https://lumilens.com/news-insights/networks-are-now-the-ai-bottleneck): Company position on the connectivity bottleneck.
+
+## Legal
+
+- [Terms of Use](https://lumilens.com/terms-of-use)
+- [Privacy Policy](https://lumilens.com/privacy)
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/lumilens/refs/heads/main/apis.yml): The machine-readable APIs.json profile for this company.
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/lumilens/refs/heads/main/security/lumilens-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC observations.
+- [.well-known probe](https://raw.githubusercontent.com/api-evangelist/lumilens/refs/heads/main/well-known/lumilens-well-known.yml): Recorded absence of every discovery document.

@@ -1,0 +1,42 @@
+generated: '2026-08-25'
+method: probed
+source: live GET of /.well-known/* on every host named in apis.yml
+note: >-
+  Every /.well-known/ path probed on lumilens.com returned HTTP 404 from the Webflow
+  origin with an 88-byte body reading "Invalid .well-known request" — a real negative,
+  not a catch-all soft 200. No document was fetched and nothing was saved, so NO
+  WellKnown or SecurityTxt pointer is emitted in apis.yml. lumilens.com is the only
+  host in scope: there are no apis[] entries, no baseURL, and no OpenAPI servers[],
+  and the api./docs./developer. subdomains do not resolve in DNS.
+hit_count: 0
+soft_404_control:
+  path: /.well-known/api-evangelist-nonexistent-control
+  status: 404
+  bytes: 88
+  verdict: origin returns a real 404 for unknown .well-known paths
+unresolvable_hosts:
+- host: api.lumilens.com
+  result: NXDOMAIN
+- host: docs.lumilens.com
+  result: NXDOMAIN
+- host: developer.lumilens.com
+  result: NXDOMAIN
+hosts:
+- host: https://lumilens.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

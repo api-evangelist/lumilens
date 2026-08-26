@@ -1,0 +1,19 @@
+generated: '2026-08-25'
+method: searched
+source: https://lumilens.com/
+docs: null
+note: >-
+  Lumilens publishes no pricing, plans or rate card. https://lumilens.com/pricing returns
+  HTTP 404 and no pricing page is linked from any navigation on the site (Photonic
+  Interconnects, Next-Gen Manufacturing, About Us, Join Us, News & Insights, Privacy,
+  Terms of Use). The product is optical interconnect silicon sold direct under negotiated
+  supply agreements — the company's own August 2026 launch release describes production
+  shipments "under a multi-billion-dollar customer agreement" rather than any published
+  commercial tier. This is a recorded absence, not an unchecked field.
+plan_count: 0
+plans: []
+evidence:
+- url: https://lumilens.com/pricing
+  status: 404
+- url: https://lumilens.com/
+  status: 200

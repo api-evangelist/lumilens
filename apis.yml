@@ -1,10 +1,25 @@
 aid: lumilens
 name: Lumilens
-description: 'Lumilens is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Lumilens is a San Jose, California photonics company building optical interconnect
+  silicon for AI data centers. Founded in 2024 by Ankur Singla (previously Contrail
+  Systems and Volterra) with Ted Schmidt, Samuel Liu, Ritesh Kapahi and Dave Friedman,
+  it designs co-packaged optics (CPO) and near-packaged optics (NPO) devices that let
+  hyperscalers replace copper interconnect with fiber at 800Gb/s, 1.6Tb/s and beyond,
+  attacking the connectivity bottleneck that now limits GPU cluster scaling more than
+  compute does. The company emerged from stealth in August 2026 with more than $900M
+  raised — including a $700M Series C at a $5.51B valuation led by Atreides Management,
+  Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital — and says it is
+  already shipping production optical interconnect into hyperscale AI data centers under
+  a multi-billion-dollar customer agreement. Its product is physical silicon sold direct
+  to a small set of very large buyers; as of this profile it publishes no developer
+  program, API, SDK or machine-readable contract of any kind, and lumilens.com is still
+  an interim recruiting and news site.
 url: https://raw.githubusercontent.com/api-evangelist/lumilens/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/68aa10a8e6f4d59001f9f05d/68b6c01786ae316e23307b57_Favicon-256x256.png
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://forgeglobal.com/lumilens_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +27,14 @@ created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Photonics
+- Optical Networking
+- Interconnects
+- Semiconductors
+- Silicon Photonics
+- Data Centers
+- Artificial Intelligence
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,107 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lumilens-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/lumilens_stock/
+  url: https://lumilens.com/
+- type: Blog
+  url: https://lumilens.com/news-insights
+- type: TermsOfService
+  url: https://lumilens.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://lumilens.com/privacy
+- type: LLMsTxt
+  url: llms/lumilens-llms.txt
+- type: Plans
+  url: plans/lumilens-plans-pricing.yml
+x-contract-discovery:
+  checked: '2026-08-25'
+  verdict: no-published-contract
+  note: >-
+    STEP 0b contract discovery run against every host this company is known to control.
+    No OpenAPI/Swagger, no GraphQL endpoint, no MCP server, no AsyncAPI, no A2A agent
+    card, no WSDL and no .proto exist anywhere. There are no apis[] entries and no
+    baseURL because there is no API: lumilens.com is a Webflow interim recruiting and
+    news site whose own footer "Blog" link is hidden and 404s, and every developer-shaped
+    subdomain is NXDOMAIN. The GitHub organization github.com/Lumilens exists (created
+    2025-09-24) but publishes zero public repositories and zero public members, and the
+    company's site never links to it, so no GitHubOrganization pointer is claimed.
+    lumilens.vercel.app is an older stealth-era site of the same company (footer
+    "(c) 2024 Lumilens Inc.") and was probed too; it publishes nothing machine-readable
+    either. Package registries were searched: npm returns 0 results for "lumilens",
+    PyPI 404s.
+  hosts_probed:
+  - host: lumilens.com
+    resolves: true
+  - host: lumilens.vercel.app
+    resolves: true
+    note: legacy stealth-era site, same company
+  - host: api.lumilens.com
+    resolves: false
+  - host: docs.lumilens.com
+    resolves: false
+  - host: developer.lumilens.com
+    resolves: false
+  - host: portal.lumilens.com
+    resolves: false
+  - host: dev.lumilens.com
+    resolves: false
+  - host: app.lumilens.com
+    resolves: false
+  - host: console.lumilens.com
+    resolves: false
+  - host: status.lumilens.com
+    resolves: false
+  - host: support.lumilens.com
+    resolves: false
+  - host: partners.lumilens.com
+    resolves: false
+  probes:
+  - {url: 'https://lumilens.com/openapi.json', status: 404}
+  - {url: 'https://lumilens.com/openapi.yaml', status: 404}
+  - {url: 'https://lumilens.com/swagger.json', status: 404}
+  - {url: 'https://lumilens.com/v1/openapi.json', status: 404}
+  - {url: 'https://lumilens.com/api-docs', status: 404}
+  - {url: 'https://lumilens.com/graphql', status: 404}
+  - {url: 'https://lumilens.com/mcp', status: 404}
+  - {url: 'https://lumilens.com/docs', status: 404}
+  - {url: 'https://lumilens.com/developers', status: 404}
+  - {url: 'https://lumilens.com/api', status: 404}
+  - {url: 'https://lumilens.com/.well-known/agent-card.json', status: 404}
+  - {url: 'https://lumilens.com/.well-known/agent.json', status: 404}
+  - {url: 'https://lumilens.com/llms.txt', status: 404}
+  - {url: 'https://lumilens.com/sitemap.xml', status: 404}
+  - {url: 'https://lumilens.com/pricing', status: 404}
+  - {url: 'https://lumilens.com/status', status: 404}
+  - {url: 'https://lumilens.com/changelog', status: 404}
+  - {url: 'https://lumilens.com/support', status: 404}
+  - {url: 'https://lumilens.com/blog', status: 404}
+  - {url: 'https://lumilens.vercel.app/openapi.json', status: 404}
+  - {url: 'https://lumilens.vercel.app/.well-known/agent-card.json', status: 404}
+  - {url: 'https://api.github.com/orgs/Lumilens/repos', status: 200, result: '0 public repositories'}
+  - {url: 'https://registry.npmjs.org/-/v1/search?text=lumilens', status: 200, result: '0 packages'}
+  - {url: 'https://pypi.org/pypi/lumilens/json', status: 404}
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Lumilens sells physical co-packaged and near-packaged optics silicon direct to
+    hyperscalers under negotiated supply agreements, and eleven months after registering
+    a GitHub org it has published zero repositories and lumilens.com is still a five-page
+    Webflow recruiting site whose own footer Blog link is hidden and 404s.
+  evidence:
+  - url: https://lumilens.com/developers
+    status: 404
+  - url: https://lumilens.com/openapi.json
+    status: 404
+  - url: https://lumilens.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.lumilens.com/
+    status: 0
+  checked: '2026-08-25'
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
