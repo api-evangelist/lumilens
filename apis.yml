@@ -16,6 +16,17 @@ description: >-
   program, API, SDK or machine-readable contract of any kind, and lumilens.com is still
   an interim recruiting and news site.
 url: https://raw.githubusercontent.com/api-evangelist/lumilens/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/68aa10a8e6f4d59001f9f05d/68b6c01786ae316e23307b57_Favicon-256x256.png
 x-type: company
 x-source: harvest:secondary-market
