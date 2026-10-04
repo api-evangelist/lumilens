@@ -55,7 +55,7 @@ tags:
 - Interconnect
 - Semiconductors
 - Silicon Photonics
-- Data-Center
+- Data Center
 - Artificial Intelligence
 - Hardware
 tags_raw:
@@ -68,6 +68,7 @@ tags_raw:
 - Data Centers
 - Artificial Intelligence
 - Hardware
+- Data-Center
 apis: []
 maintainers:
 - FN: Kin Lane
